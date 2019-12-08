@@ -7,8 +7,13 @@ verify_ssl = true
 
 [packages]
 requests = "*"
-pylint = "*"
 pytest-bdd = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.7"
+
+
+[scripts]
+lint = "pylint tests/step-defs"
+test = "bash -c \"mkdir -p test-reports && pytest . --junitxml=test-reports/junit.xml\""

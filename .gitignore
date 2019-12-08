@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
+test-reports
 #intelliJ files
 .idea/**
 
